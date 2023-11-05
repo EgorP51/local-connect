@@ -1,6 +1,8 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:local_connect/features/requests/presentation/widgets/requests_widget.dart';
 
+@RoutePage()
 class RequestsPage extends StatelessWidget {
   const RequestsPage({super.key});
 

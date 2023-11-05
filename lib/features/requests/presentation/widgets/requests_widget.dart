@@ -1,6 +1,8 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:local_connect/core/navigation/app_router.dart';
 import 'package:local_connect/core/ui/app_colors.dart';
 
 class RequestsWidget extends StatelessWidget {
@@ -34,13 +36,16 @@ class RequestsBody extends StatelessWidget {
               child: const Icon(
                 CupertinoIcons.add,
                 size: 100,
-                color: AppColors.white,
+                color: AppColors.orange,
               ),
             ),
           ),
           const Text(
             'new request',
-            style: TextStyle(color: AppColors.white, fontSize: 20),
+            style: TextStyle(
+              color: AppColors.white,
+              fontSize: 20,
+            ),
           ),
           const Gap(50),
           Expanded(
