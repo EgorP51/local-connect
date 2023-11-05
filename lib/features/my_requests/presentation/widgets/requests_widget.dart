@@ -32,7 +32,11 @@ class RequestsBody extends StatelessWidget {
           SizedBox.square(
             dimension: 100,
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                context.router.push(
+                  const NewRequestRoute(),
+                );
+              },
               child: const Icon(
                 CupertinoIcons.add,
                 size: 100,

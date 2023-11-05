@@ -13,6 +13,7 @@ class HomePage extends StatelessWidget {
     return AutoTabsRouter.pageView(
       routes: const [
         RequestsRoute(),
+        ExternalRequestsRoute(),
         ContactsRoute(),
       ],
       builder: (context, child, _) {
@@ -38,6 +39,12 @@ class HomePage extends StatelessWidget {
                 label: 'requests',
                 icon: Icon(
                   CupertinoIcons.lightbulb,
+                ),
+              ),
+              BottomNavigationBarItem(
+                label: 'externalRequests',
+                icon: Icon(
+                  CupertinoIcons.map,
                 ),
               ),
               BottomNavigationBarItem(
