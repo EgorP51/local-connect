@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:local_connect/core/navigation/app_router.dart';
 import 'package:local_connect/core/ui/app_colors.dart';
+import 'package:local_connect/features/home/widgets/home_drawer.dart';
 
 @RoutePage()
 class HomePage extends StatelessWidget {
@@ -19,7 +20,7 @@ class HomePage extends StatelessWidget {
       builder: (context, child, _) {
         final tabsRouter = AutoTabsRouter.of(context);
         return Scaffold(
-          drawer: const Drawer(),
+          drawer: const HomeDrawer(),
           backgroundColor: AppColors.black,
           appBar: AppBar(
             title: Text(context.topRoute.name),

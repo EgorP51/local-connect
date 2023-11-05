@@ -4,6 +4,7 @@ import 'package:local_connect/features/external_requests/presentation/pages/exte
 import 'package:local_connect/features/home/home_page.dart';
 import 'package:local_connect/features/my_requests/presentation/pages/new_request_page.dart';
 import 'package:local_connect/features/my_requests/presentation/pages/requests_page.dart';
+import 'package:local_connect/features/profile/pages/profile_page.dart';
 
 part 'app_router.gr.dart';
 
@@ -34,6 +35,10 @@ class AppRouter extends _$AppRouter {
       AutoRoute(
         page: NewRequestRoute.page,
         path: '/new_request',
+      ),
+      AutoRoute(
+        page: ProfileRoute.page,
+        path: '/profile',
       ),
     ];
   }

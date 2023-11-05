@@ -19,6 +19,19 @@ class NewRequestWidget extends StatelessWidget {
           ),
         ),
       ),
+      body: const Placeholder(
+        child: Center(
+          child: Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text(
+              '// TODO: логика создания запроса\n\n Возможно настройки того как и кому отправлять сообщения',
+              style: TextStyle(
+                color: Colors.orange,
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

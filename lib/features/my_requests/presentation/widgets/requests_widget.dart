@@ -78,6 +78,17 @@ class RequestsTile extends StatelessWidget {
         height: 100,
         child: Placeholder(
           color: AppColors.white,
+          child: Center(
+            child: Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(
+                '// TODO: тут будут последние запросы которые создал пользователь',
+                style: TextStyle(
+                  color: Colors.orange,
+                ),
+              ),
+            ),
+          ),
         ),
       ),
     );

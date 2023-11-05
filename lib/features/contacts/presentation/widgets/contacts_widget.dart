@@ -5,6 +5,18 @@ class ContactWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Placeholder(
+      child: Center(
+        child: Padding(
+          padding: EdgeInsets.all(16.0),
+          child: Text(
+            '// TODO: тут уже существующие контакты и возможность добавлять новые. Придумать как эти контакты создавать)) \n\n(возможно чаты)',
+            style: TextStyle(
+              color: Colors.orange,
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
