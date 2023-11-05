@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:local_connect/features/auth/presentation/pages/auth_page.dart';
+import 'package:local_connect/features/home/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
-        useMaterial3: true,
-      ),
-      home: const AuthPage(),
+    return const MaterialApp(
+      home: Home(),
     );
   }
 }
